@@ -2,4 +2,7 @@
 
 #include "calculatorTest.hpp"
 
-int main() { calculatorTest(); }
+int main()
+{
+    calculatorTest();
+}

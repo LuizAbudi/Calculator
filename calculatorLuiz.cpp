@@ -1,9 +1,18 @@
 #include "calculatorLuiz.hpp"
 
 #include <iostream>
+/*
+CalculatorErrorLuiz::CalculatorErrorLuiz(char const *message)
+{
+  this->message = message;
+}
+*/
+char const *CalculatorErrorLuiz::getMessage() { return this->message; }
 
-void DisplayLuiz::add(Digit digit) {
-  switch (digit) {
+void DisplayLuiz::add(Digit digit)
+{
+  switch (digit)
+  {
   case ZERO:
     std::cout << "0 ";
     break;
@@ -13,31 +22,31 @@ void DisplayLuiz::add(Digit digit) {
   case TWO:
     std::cout << "2 ";
     break;
-  case THREE://
+  case THREE:
     std::cout << "3 ";
     break;
-  case FOUR://
+  case FOUR:
     std::cout << "4 ";
     break;
-  case FIVE://
+  case FIVE:
     std::cout << "5 ";
     break;
-  case SIX://
+  case SIX:
     std::cout << "6 ";
     break;
-  case SEVEN://
+  case SEVEN:
     std::cout << "7 ";
     break;
-  case EIGHT://
+  case EIGHT:
     std::cout << "8 ";
     break;
-  case NINE://
+  case NINE:
     std::cout << "9 ";
     break;
-    
+
   default:
     std::cout << "E";
-     throw CalculatorError("Digit not implemented!!!");//
+    throw CalculatorError("Digit not implemented!!!"); //
   }
 }
 
